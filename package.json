@@ -1,5 +1,5 @@
 {
-  "name": "ClassicmodelsBelkix",
+  "name": "ClassicmodelsMery",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "Belkix Requejo Micolta",
+  "author": "Mery Guadalupe Lema Sivinta",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
