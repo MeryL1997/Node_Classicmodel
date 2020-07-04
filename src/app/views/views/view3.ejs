@@ -18,22 +18,16 @@
         <table class="table table-striped table-bordered">
           <tr>
             <th>N# orden</th>
-            <th>Fecha Orden</th>
-            <th>Fecha requerida</th>
-            <th>Fecha de envio</th>
-            <th>Estado</th>
-            <th>Comentario</th>
-            <th>Numero de Cliente</th>
+            <th>Nombre</th>
+            <th>Producto</th>
+            <th>Fecha de la orden</th>
           </tr>
           <% for (var i = 0; i < view3.length; i ++) { %>
           <tr>
-            <td><%- view3[i].orderNumber %></td>
+            <td><%- view3[i].orderNumber%></td>
+            <td><%- view3[i].nombre %></td>
+            <td><%- view3[i].productName %></td>
             <td><%- view3[i].orderDate %></td>
-            <td><%- view3[i].requiredDate %></td>
-            <td><%- view3[i].shippedDate %></td>
-            <td><%- view3[i].status %></td>
-            <td><%- view3[i].comments %></td>
-            <td><%- view3[i].customerNumber %></td>
           </tr>
           <% } %>
         </table>
