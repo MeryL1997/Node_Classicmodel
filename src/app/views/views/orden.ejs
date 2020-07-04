@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html html lang="es">
-<head>
-    <meta charset="utf-8" />
-    <title>Lista de Compras</title>
-    <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-            integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-            crossorigin="anonymous"
-    />
-</head>
+        <head>
+            <meta charset="utf-8" />
+            <title>Lista de Compras</title>
+            <link
+                    rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+                    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+                    crossorigin="anonymous"/>
+        </head>
     <body>
     <%- include('../home/vistas.ejs') %>
 
@@ -25,15 +24,15 @@
                         <th>Comentario</th>
                         <th>Numero de Cliente</th>
                     </tr>
-                    <% for (var i = 0; i < class3.length; i ++) { %>
+                    <% for (var i = 0; i < orden.length; i ++) { %>
                         <tr>
-                            <td><%- class3[i].orderNumber %></td>
-                            <td><%- class3[i].orderDate %></td>
-                            <td><%- class3[i].requiredDate %></td>
-                            <td><%- class3[i].shippedDate %></td>
-                            <td><%- class3[i].status %></td>
-                            <td><%- class3[i].comments %></td>
-                            <td><%- class3[i].customerNumber %></td>
+                            <td><%- orden[i].orderNumber %></td>
+                            <td><%- orden[i].orderDate %></td>
+                            <td><%- orden[i].requiredDate %></td>
+                            <td><%- orden[i].shippedDate %></td>
+                            <td><%- orden[i].status %></td>
+                            <td><%- orden[i].comments %></td>
+                            <td><%- orden[i].customerNumber %></td>
                         </tr>
                     <% } %>
                 </table>
