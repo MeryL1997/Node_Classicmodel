@@ -4,7 +4,7 @@ const dbConnection = require("../../config/dbConnection");
 module.exports = app => {
 
     const connection = dbConnection();
-    app.post('/replizarc', (req, res) => {
+    app.post('/formularios', (req, res) => {
     // Order
     var a1=req.body.new_orderNumber;
     var a2=req.body.new_orderDate;
@@ -30,12 +30,12 @@ module.exports = app => {
         && a10!== undefined
         && a11!== undefined
     ){
-        connection.query(`call ordenar_producto('${a1}','${a2}','${a3}','${a4}','${a5}','${a6}','${a7}','${a8}','${a9}','${a10}','${a11}')`,
+        connection.query(`call Nuevo_Pedido('${a1}','${a2}','${a3}','${a4}','${a5}','${a6}','${a7}','${a8}','${a9}','${a10}','${a11}')`,
             function(err,rows) {
                 if(err) {
                     console.log(err);
                 } else {
-                    res.redirect('views/formulario');
+                    res.redirect('views/formularios');
                 }
             })
     }
