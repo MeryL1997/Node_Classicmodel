@@ -4,6 +4,7 @@ const dbConnection = require("../../config/dbConnection");
 module.exports = app => {
 
     const connection = dbConnection();
+
     app.post('/view4', (req, res) => {
    // Order
    var a1=req.body.new_orderNumber;
@@ -30,7 +31,7 @@ module.exports = app => {
      && a10!== undefined
      && a11!== undefined
      ){
-     connection.query(`CALL classicmodels.Nuevo_Pedido('${a1}','${a2}','${a3}','${a4}','${a5}','${a6}','${a7}','${a8}','${a9}','${a10}','${a11}')`,
+     connection.query(`call classicmodels.Nuevo_Pedido('${a1}','${a2}','${a3}','${a4}','${a5}','${a6}','${a7}','${a8}','${a9}','${a10}','${a11}')`,
      function(err,rows) {
        if(err) {
          console.log(err);
