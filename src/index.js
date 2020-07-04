@@ -1,5 +1,6 @@
 const app = require("./config/server");
 
+require("./app/routes/view4")(app);
 require("./app/routes/view3")(app);
 require("./app/routes/view2")(app);
 require("./app/routes/view1")(app);
