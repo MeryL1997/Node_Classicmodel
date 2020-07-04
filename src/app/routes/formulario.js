@@ -4,7 +4,7 @@ const dbConnection = require("../../config/dbConnection");
 module.exports = app => {
 
     const connection = dbConnection();
-    app.post('/formulario', (req, res) => {
+    app.post('/replizarc', (req, res) => {
     // Order
     var a1=req.body.new_orderNumber;
     var a2=req.body.new_orderDate;
