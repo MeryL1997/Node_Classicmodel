@@ -7,7 +7,7 @@ module.exports = app => {
     app.get('/orden', (req, res) => {
         connection.query('SELECT * FROM classicmodels.orders;', (err, result) => {
             res.render('views/orden', {
-                class3: result
+                orden: result
             });
         });
     });
